@@ -5,7 +5,7 @@ st.sidebar.title("Parametros")
 st.write("Elaborado por: Heidy Coello")
 
 
-archivo = st.file_uploader("Cargue su archivo")
+archivo = st.sidebar.file_uploader("Cargue su archivo")
 
 if archivo is not None:
   tabla = pd.read_csv(archivo)
